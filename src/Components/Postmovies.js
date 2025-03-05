@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import styled from "styled-components";
+import AdNavbar from "./AdminNavbar";
 function Postmovies() {
   const [title, setTitle] = useState("");
   const [imageURL, setImageURL] = useState("");
@@ -24,6 +25,7 @@ function Postmovies() {
   };
   return (
     <Container>
+      <AdNavbar />
       <Logo>
         <img src="./amazon_logo.png" alt="" />
       </Logo>

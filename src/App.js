@@ -9,6 +9,7 @@ import Movies from './Components/Movies'
 import Checkout from './Components/Checkout'
 import Address from './Components/Address'
 import Payment from './Components/Payment'
+import Orders from './Components/Orders'
 
 import {Elements} from '@stripe/react-stripe-js'
 import { loadStripe } from '@stripe/stripe-js'
@@ -38,6 +39,8 @@ function App () {
         <Payment />
       </Elements>
       } />
+      <Route path="/Orders" element={<Orders />} />
+
      
       
       

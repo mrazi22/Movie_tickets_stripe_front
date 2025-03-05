@@ -59,6 +59,7 @@ function Payment() {
                 .then((addOrderResponse) => {
                     // Handle successful addorder response
                     console.log("Order added successfully:", addOrderResponse);
+                     
                 })
                 .catch((addOrderError) => {
                     // Handle addorder error
@@ -71,6 +72,8 @@ function Payment() {
             dispatch({
                 type: "EMPTY_BASKET",
             });
+            // Show success message before navigating
+            alert("Payment successful!");
             navigate("/home");
         })
         .catch((err) => console.warn(err));

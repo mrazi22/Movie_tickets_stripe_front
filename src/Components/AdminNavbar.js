@@ -29,8 +29,8 @@ const AdNavbar = () => {
                 </Logo>
 
                 <RightContainer>
-                    <NavButton onClick={() => navigate("/home")}>
-                    <p>Home</p>
+                    <NavButton onClick={() => navigate("/Orders")}>
+                    <p>Orders</p>
 
                     </NavButton  >
                     

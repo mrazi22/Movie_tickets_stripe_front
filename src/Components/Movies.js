@@ -44,7 +44,7 @@ const Movies = () => {
           date: product.date
         }
       });
-      toast.success("Ticket Bought", {
+      toast.success("Ticket Added", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
